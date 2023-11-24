@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+}
+
+body {
+    background: url('../assets/images/bg.jpg') no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: black;
+}
+
+h1 {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: black;
+    border-bottom: 2px solid gold;
+
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+h2 {
+    color: red;
+}
+
+span {
+    color: #fff;
+}
+
+.menu-lives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-img {
+    width: 10%;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.square {
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    background-color: antiquewhite;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.enemy {
+    background-color: orangered;
+    background-image: url('../assets/images/ralph.jpg');
+    background-size: cover;
+}
+
