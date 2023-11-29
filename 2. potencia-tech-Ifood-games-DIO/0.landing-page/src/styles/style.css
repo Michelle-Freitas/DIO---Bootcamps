@@ -1,0 +1,226 @@
+@import url('./variables.css');
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    background: #000;
+    width: 100vw;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../../assets/images/banner2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid var(--principal-color);
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+
+h1 {
+    background: -webkit-linear-gradient(var(--principal-color), #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 16px;
+
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+}
+
+p {
+    color: var(--simple-text-color);
+    font-weight: 400;
+    max-width: 100vw;
+}
+
+.banner-content p {
+    max-width: 510px;
+
+    text-align: center;
+    line-height: normal;
+}
+
+.banner-content button {
+    width: 326px;
+    padding: 19px;
+    border: 2px solid var(--btn-color);
+
+    color: var(--btn-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3.36px;
+
+    background-color: transparent;
+}
+
+.banner-content button:hover {
+    border: 2px solid var(--simple-text-color);
+
+    color: var(--btn-color);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#course-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    width: 792px;
+    max-width: 100vw;
+    padding: 20px;
+
+}
+
+#course-content h2 {
+    color: var(--principal-color);
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 6.08px;
+
+    padding-top: 120px;
+}
+
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.module {
+    color: var(--simple-text-color);
+    text-align: center;
+
+    width: 535px;
+    max-width: 100vw;
+    padding: 16px;
+    border-radius: 57px;
+    border: 1px solid var(--principal-color);
+    background: var(--module-bg-color);
+    box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.40) inset;
+}
+
+.module span {
+    color: var(--principal-color);
+}
+
+#transform-world {
+    margin-top: 100px;
+    background: url('../../assets/images/woman-code.png') center no-repeat;
+    background-size: cover;
+
+    height: 300px;
+    width: 100vw;
+    border: 1px solid var(--principal-color);
+
+    display: inline-flex;
+    align-items: center;
+    padding: 200px;
+}
+
+
+#transform-world p {
+    text-transform: lowercase;
+    font-weight: 900;
+    text-shadow: 3px 2px 0px #33A8DB;
+    font-size: 40px;
+
+    max-width: 245px;
+}
+
+#professional-challenges {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#professional-challenges h2{
+    color: var(--principal-color);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 6.08px;
+    text-transform: uppercase;
+
+    max-width: 745px;
+}
+
+#professional-challenges img {
+    width: 100vw;
+    max-width: 659px;
+    max-height: 429px;
+}
+
+#professional-challenges p {
+    max-width: 792px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer {
+    margin-top: 90px;
+    padding: 60px;
+    border-top: 1px solid var(--principal-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer a {
+    color: var(--principal-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

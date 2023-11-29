@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px){
+
+    #transform-world {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #professional-challenges p {
+        max-width: 600px;
+    }
+}
